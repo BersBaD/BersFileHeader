@@ -22,4 +22,3 @@
 %z  UTC offset in the form +HHMM or -HHMM (empty string if the the object is naive).    (5)
 %Z  Time zone name (empty string if the object is naive).
 %%  A literal '%' character.
-
