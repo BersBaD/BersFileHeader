@@ -50,7 +50,7 @@ You could put settings below in your Perferences.sublime-settings by click "Perf
             ".*.sublime.*",
             "README",
             ".*.sublime-settings",
-            "zy_file_header.py"
+            "bers_file_header.py"
         ],
         "perl": "#!/usr/bin/env perl -w",
         "python": "#!/usr/bin/env python\n# -*- coding:utf-8 -*-",
