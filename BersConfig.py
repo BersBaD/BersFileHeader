@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 #############################################################################
-# ScriptName  : bers_config.py
+# ScriptName  : BersConfig.py
 # Author      : Bers <bers@elite-copr.ru>
-# Create Date : 05-03-2013 14:13:55
-# Modify Date : 05-03-2013 14:26:13
+# Create Date : 05-03-2013 14:26:13
+# Modify Date : 05-03-2013 19:09:20
 # Decription  :
 #############################################################################
 import sublime

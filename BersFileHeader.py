@@ -1,18 +1,19 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 #############################################################################
-# ScriptName  : bers_file_header.py
+# ScriptName  : BersFileHeader.py
 # Author      : Bers <bers@elite-copr.ru>
-# Create Date : 05-03-2013 14:13:55
-# Modify Date : 05-03-2013 14:25:34
+# Create Date : 05-03-2013 14:26:13
+# Modify Date : 05-03-2013 19:10:14
 # Decription  :
 #############################################################################
+import sublime
 import sublime_plugin
 import os
 import datetime
 import re
 
-from bers_config import BersConfig
+from BersConfig import BersConfig
 
 
 class BersAddHeaderOnCreatedCommand(sublime_plugin.TextCommand):
