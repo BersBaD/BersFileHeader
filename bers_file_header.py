@@ -3,8 +3,8 @@
 #############################################################################
 # ScriptName  : bers_file_header.py
 # Author      : Bers <bers@elite-copr.ru>
-# Create Date : 05-03-2013 11:46:55
-# Modify Date : 05-03-2013 12:25:55
+# Create Date : 05-03-2013 12:41:35
+# Modify Date : 05-03-2013 13:05:25
 # Decription  :
 #############################################################################
 import sublime_plugin
