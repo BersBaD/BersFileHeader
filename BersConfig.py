@@ -22,7 +22,8 @@ class BersConfig:
 
     @classmethod
     def load_settings(self):
-        s = sublime.load_settings('Preferences.sublime-settings')
+        # s = sublime.load_settings('Preferences.sublime-settings')
+        s = sublime.load_settings('BersFileHeader.sublime-settings')
         self.config = s.get('bers_file_header')
         if not self.config:
             raise Exception("bers_file_header is not configured.")
