@@ -7,7 +7,7 @@
 		{ "caption": "-", "id": "encoding-separator" },
 
 					{"command":"toutf8from_best_guess"},
-					{"caption": "Convert to UTF-8 From Encoding",
+					{"caption": "2Convert to UTF-8 From Encoding",
 					 "children":
 						[
 						//ALL
@@ -242,9 +242,9 @@
 							},
 							{"caption":"Urdu (CP1006)" ,"command":"toutf8from","args": {"encoding":"CP1006" } },
 							{"caption":"Vietnamese (CP1258)" ,"command":"toutf8from","args": {"encoding":"CP1258" } },
-							
 
-						
+
+
 						//REGION
 							{"caption":"-"},
 							{"caption": "Baltic languages", "children":
@@ -258,7 +258,7 @@
 							{"caption":"Celtic languages (ISO8859 14)" ,"command":"toutf8from","args": {"encoding":"ISO8859_14" } },
 							{"caption":"Nordic languages (ISO8859 10)" ,"command":"toutf8from","args": {"encoding":"ISO8859_10" } },
 
-						
+
 						//LOCATION
 							{"caption":"-"},
 							{"caption": "Central and Eastern Europe", "children":
@@ -285,7 +285,7 @@
 						]
 					}
 				]
-			
-    
+
+
   }
 ]

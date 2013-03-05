@@ -15,6 +15,12 @@
 												"caption": "BersFileHeader",
 												"children":
 												[
+												    {
+                                "command": "open_file",
+                                "args": {"file": "${packages}/BersFileHeader/README.md"},
+                                "caption": "README"
+                            },
+                            { "caption": "-" },
 														{
 																"command": "open_file", "args":
 																{
