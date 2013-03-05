@@ -3,8 +3,8 @@
 #############################################################################
 # ScriptName  : BersFileHeader.py
 # Author      : Bers <bers@elite-copr.ru>
-# Create Date : 05-03-2013 22:19:39
-# Modify Date : 05-03-2013 23:20:47
+# Create Date : 05-03-2013 23:20:47
+# Modify Date : 06-03-2013 00:08:24
 # Decription  :
 #############################################################################
 import sublime
@@ -17,7 +17,6 @@ from BersConfig import BersConfig
 
 
 class BersAddHeaderOnCreatedCommand(sublime_plugin.TextCommand):
-
     def run(self, edit):
         bers_config = BersConfig.get_singleton()
         if bers_config.get('add_on_created') == False:
@@ -27,7 +26,6 @@ class BersAddHeaderOnCreatedCommand(sublime_plugin.TextCommand):
 
 
 class BersFileNewHeaderCommand(sublime_plugin.TextCommand):
-
     def run(self, edit):
         bers_config = BersConfig.get_singleton()
         if not self.view.file_name():

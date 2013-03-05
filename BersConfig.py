@@ -3,8 +3,8 @@
 #############################################################################
 # ScriptName  : BersConfig.py
 # Author      : Bers <bers@elite-copr.ru>
-# Create Date : 05-03-2013 19:31:34
-# Modify Date : 05-03-2013 23:29:55
+# Create Date : 05-03-2013 23:29:55
+# Modify Date : 06-03-2013 00:09:04
 # Decription  :
 #############################################################################
 import sublime
@@ -22,7 +22,6 @@ class BersConfig:
 
     @classmethod
     def load_settings(self):
-        # s = sublime.load_settings('Preferences.sublime-settings')
         s = sublime.load_settings('BersFileHeader.sublime-settings')
         self.config = s.get('BersFileHeader')
         if not self.config:
