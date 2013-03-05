@@ -13,7 +13,7 @@
         [
             ".*.sublime.*",
             "README",
-            ".*.sublime-settings",
+            ".*.sublime-settings"
         ],
         "perl": "#!/usr/bin/env perl -w",
         "python": "#!/usr/bin/env python\n# -*- coding:utf-8 -*-",
