@@ -1,1 +1,7 @@
-{"url": "https://github.com/BersBaD/BersFileHeader", "version": "05.03.2013.19.31.19", "description": "Help add fileheader when file is created. "}
+{
+  "url": "https://github.com/BersBaD/BersFileHeader",
+  "version": "05.03.2013.22.17.47",
+  "description": "Sublime Text 2 plugin, help add fileheader when file is created.",
+  "author": "Bers",
+  "homepage": "https://github.com/BersBaD/BersFileHeader"
+}
