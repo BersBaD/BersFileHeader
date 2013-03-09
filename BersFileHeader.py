@@ -4,7 +4,7 @@
 # ScriptName  : BersFileHeader.py
 # Author      : Bers <bers@elite-copr.ru>
 # Create Date : 05-03-2013 23:20:47
-# Modify Date : 10-03-2013 01:47:41
+# Modify Date : 10-03-2013 01:52:43
 # Decription  :
 #############################################################################
 import sublime
@@ -29,9 +29,9 @@ class BersConfig:
     @classmethod
     def load_settings(self):
         s = sublime.load_settings('BersFileHeader.sublime-settings')
-        self.config = s.get('BersFileHeader')
-        if not self.config:
-            raise Exception("BersFileHeader is not configured.")
+        # self.config = s.get('BersFileHeader')
+        # if not self.config:
+        #     raise Exception("BersFileHeader is not configured.")
 
         print self.config
         """set default time_format"""
