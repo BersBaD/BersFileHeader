@@ -4,7 +4,7 @@
 # ScriptName  : BersFileHeader.py
 # Author      : Bers <bers@elite-copr.ru>
 # Create Date : 05-03-2013 23:20:47
-# Modify Date : 06-03-2013 00:08:24
+# Modify Date : 10-03-2013 01:47:41
 # Decription  :
 #############################################################################
 import sublime
@@ -13,8 +13,30 @@ import os
 import datetime
 import re
 
-from BersConfig import BersConfig
+# from BersConfig import BersConfig
 
+
+class BersConfig:
+
+    config = None
+
+    @classmethod
+    def get_singleton(self):
+        self.load_settings()
+
+        return self.config
+
+    @classmethod
+    def load_settings(self):
+        s = sublime.load_settings('BersFileHeader.sublime-settings')
+        self.config = s.get('BersFileHeader')
+        if not self.config:
+            raise Exception("BersFileHeader is not configured.")
+
+        print self.config
+        """set default time_format"""
+        if not self.config.get('time_format'):
+            self.config['time_format'] = '%d-%m-%Y %H:%M:%S'
 
 class BersAddHeaderOnCreatedCommand(sublime_plugin.TextCommand):
     def run(self, edit):
