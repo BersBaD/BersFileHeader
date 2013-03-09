@@ -1,20 +1,23 @@
 {
-    "add_on_created": true,
-    "author": "Bers",
-    "email": "bers@elite-copr.ru",
-    "file_header_format": "#############################################################################\n# ScriptName  : \n# Author      : @@author <@@email>\n# Create Date :\n# Modify Date :\n# Decription  :\n#############################################################################\n",
-    "file_header_format.c": "/*********************************************************#\n# ScriptName  : \n# Author      : @@author <@@email>\n# Create Date :\n# Modify Date :\n# Decription  :\n#*********************************************************/",
-    "file_header_format.php": "/*********************************************************#\n# ScriptName  : \n# Author      : @@author <@@email>\n# Create Date :\n# Modify Date :\n# Decription  :\n#*********************************************************/",
-    "file_header_format.pl": "#############################################################################\n# ScriptName  : \n# Author      : @@author <@@email>\n# Create Date :\n# Modify Date :\n# Decription  :\n#############################################################################\n",
-    "file_header_format.sh": "#############################################################################\n# ScriptName  : \n# Author      : @@author <@@email>\n# Create Date :\n# Modify Date :\n# Decription  :\n#############################################################################\n",
-    "ignore_files":
-    [
-        ".*.sublime.*",
-        "README",
-        ".*.sublime-settings"
-    ],
-    "perl": "#!/usr/bin/env perl -w",
-    "python": "#!/usr/bin/env python\n# -*- coding:utf-8 -*-",
-    "shell": "#!/usr/bin/env bash",
-    "time_format": "%d-%m-%Y %H:%M:%S"
+    "BersFileHeader":
+    {
+        "add_on_created": true,
+        "author": "Bers",
+        "email": "bers@elite-copr.ru",
+        "file_header_format": "#############################################################################\n# ScriptName  : \n# Author      : @@author <@@email>\n# Create Date :\n# Modify Date :\n# Decription  :\n#############################################################################\n",
+        "file_header_format.c": "/*********************************************************#\n# ScriptName  : \n# Author      : @@author <@@email>\n# Create Date :\n# Modify Date :\n# Decription  :\n#*********************************************************/",
+        "file_header_format.php": "/*********************************************************#\n# ScriptName  : \n# Author      : @@author <@@email>\n# Create Date :\n# Modify Date :\n# Decription  :\n#*********************************************************/",
+        "file_header_format.pl": "#############################################################################\n# ScriptName  : \n# Author      : @@author <@@email>\n# Create Date :\n# Modify Date :\n# Decription  :\n#############################################################################\n",
+        "file_header_format.sh": "#############################################################################\n# ScriptName  : \n# Author      : @@author <@@email>\n# Create Date :\n# Modify Date :\n# Decription  :\n#############################################################################\n",
+        "ignore_files":
+        [
+            ".*.sublime.*",
+            "README",
+            ".*.sublime-settings"
+        ],
+        "perl": "#!/usr/bin/env perl -w",
+        "python": "#!/usr/bin/env python\n# -*- coding:utf-8 -*-",
+        "shell": "#!/usr/bin/env bash",
+        "time_format": "%d-%m-%Y %H:%M:%S"
+    }
 }

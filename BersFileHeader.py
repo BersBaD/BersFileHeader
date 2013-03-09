@@ -29,9 +29,9 @@ class BersConfig:
     @classmethod
     def load_settings(self):
         s = sublime.load_settings('BersFileHeader.sublime-settings')
-        # self.config = s.get('BersFileHeader')
-        # if not self.config:
-        #     raise Exception("BersFileHeader is not configured.")
+        self.config = s.get('BersFileHeader')
+        if not self.config:
+            raise Exception("BersFileHeader is not configured.")
 
         print self.config
         """set default time_format"""
