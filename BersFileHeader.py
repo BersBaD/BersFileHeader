@@ -4,7 +4,7 @@
 # ScriptName  : BersFileHeader.py
 # Author      : Bers <bers@elite-copr.ru>
 # Create Date : 05-03-2013 23:20:47
-# Modify Date : 10-03-2013 01:52:43
+# Modify Date : 24-07-2014 16:06:19
 # Decription  :
 #############################################################################
 import sublime
@@ -15,7 +15,6 @@ import re
 
 # from BersConfig import BersConfig
 
-
 class BersConfig:
 
     config = None
@@ -23,7 +22,6 @@ class BersConfig:
     @classmethod
     def get_singleton(self):
         self.load_settings()
-
         return self.config
 
     @classmethod
@@ -33,7 +31,6 @@ class BersConfig:
         if not self.config:
             raise Exception("BersFileHeader is not configured.")
 
-        print self.config
         """set default time_format"""
         if not self.config.get('time_format'):
             self.config['time_format'] = '%d-%m-%Y %H:%M:%S'
@@ -45,7 +42,6 @@ class BersAddHeaderOnCreatedCommand(sublime_plugin.TextCommand):
             return
         else:
             self.view.run_command('bers_file_new_header')
-
 
 class BersFileNewHeaderCommand(sublime_plugin.TextCommand):
     def run(self, edit):
@@ -80,7 +76,6 @@ class BersFileNewHeaderCommand(sublime_plugin.TextCommand):
 
         self.view.insert(edit, 0, file_header_format)
 
-
 class BersAddCmdHeaderCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         bers_config = BersConfig.get_singleton()
@@ -107,7 +102,6 @@ class BersAddCmdHeaderCommand(sublime_plugin.TextCommand):
         if not exists:
             self.view.insert(edit, 0, cmd_header + '\n')
 
-
 class BersAddFileFooterCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         default_footer = os.linesep
@@ -115,7 +109,6 @@ class BersAddFileFooterCommand(sublime_plugin.TextCommand):
         last_line = self.view.substr(self.view.line(self.view.size()))
         if len(last_line) > 0:
             self.view.insert(edit, self.view.size(), default_footer)
-
 
 class BersFileModifiedCommand(sublime_plugin.TextCommand):
     def run(self, edit):
@@ -144,13 +137,11 @@ class BersFileModifiedCommand(sublime_plugin.TextCommand):
                               line,
                               before_string + 'ScriptName  : ' + os.path.basename(self.view.file_name()))
 
-
 class BersAddFileHeaderManually(sublime_plugin.TextCommand):
     def run(self, edit):
         self.view.run_command('bers_file_new_header')
         self.view.run_command('bers_file_modified')
         self.view.run_command('bers_add_cmd_header')
-
 
 class BersAddFileAndCmdHeader(sublime_plugin.EventListener):
     def on_new(self, view):
