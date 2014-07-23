@@ -1,0 +1,6 @@
+[
+  {
+    "keys": ["ctrl+shift+h"],
+    "command": "bers_add_file_header_manually"
+  }
+]

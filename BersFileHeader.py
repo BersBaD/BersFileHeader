@@ -4,7 +4,7 @@
 # ScriptName  : BersFileHeader.py
 # Author      : Bers <bers@elite-copr.ru>
 # Create Date : 05-03-2013 23:20:47
-# Modify Date : 10-03-2013 01:52:43
+# Modify Date : 23-07-2014 12:36:44
 # Decription  :
 #############################################################################
 import sublime
@@ -12,6 +12,7 @@ import sublime_plugin
 import os
 import datetime
 import re
+# import pdb, sys; pdb.Pdb(stdout=sys.__stdout__).set_trace()
 
 # from BersConfig import BersConfig
 
@@ -33,7 +34,7 @@ class BersConfig:
         if not self.config:
             raise Exception("BersFileHeader is not configured.")
 
-        print self.config
+        # print self.config
         """set default time_format"""
         if not self.config.get('time_format'):
             self.config['time_format'] = '%d-%m-%Y %H:%M:%S'
