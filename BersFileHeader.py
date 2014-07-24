@@ -1,10 +1,10 @@
-#!/usr/bin/env python\n
+#!/usr/bin/env python
 # -*- coding:utf-8 -*-
 #############################################################################
 # ScriptName  : BersFileHeader.py
 # Author      : Bers <bers@elite-copr.ru>
 # Create Date : 24-07-2014 16:16:17
-# Modify Date : 24-07-2014 16:18:09
+# Modify Date : 24-07-2014 16:30:17
 # Decription  :
 #############################################################################
 
