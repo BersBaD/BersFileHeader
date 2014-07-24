@@ -1,12 +1,13 @@
-#!/usr/bin/env python
+#!/usr/bin/env python\n
 # -*- coding:utf-8 -*-
 #############################################################################
 # ScriptName  : BersFileHeader.py
 # Author      : Bers <bers@elite-copr.ru>
-# Create Date : 05-03-2013 23:20:47
-# Modify Date : 24-07-2014 16:06:19
+# Create Date : 24-07-2014 16:16:17
+# Modify Date : 24-07-2014 16:18:09
 # Decription  :
 #############################################################################
+
 import sublime
 import sublime_plugin
 import os
